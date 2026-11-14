@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="CrmBL/CrmBL.csproj" />
+  <Project Path="CrmUI/CrmUI.csproj" Id="eb61dd77-f051-429f-b4db-1592e541f75f" />
+</Solution>
