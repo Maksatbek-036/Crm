@@ -19,7 +19,7 @@ namespace CrmUI
         public Catalog(DbSet<T> set)
         {
             InitializeComponent();
-            dataGridView1.DataSource=set.Local.ToBindingList();
+            dataGridView1.DataSource = set.Local.ToBindingList();
 
         }
 

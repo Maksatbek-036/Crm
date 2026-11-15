@@ -11,7 +11,7 @@ namespace CrmUI
 {
     public partial class CustomerForm : Form
     {
-        public Customer Customer = new Customer();
+        public Customer Customer { get; set; }
         public CustomerForm()
         {
             InitializeComponent();

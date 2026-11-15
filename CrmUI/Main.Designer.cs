@@ -32,9 +32,11 @@
             сущностиToolStripMenuItem = new ToolStripMenuItem();
             ProductToolStripMenuItem = new ToolStripMenuItem();
             SellerToolStripMenuItem = new ToolStripMenuItem();
+            SellerAddToolStripMenuItem = new ToolStripMenuItem();
             CustomerToolStripMenuItem = new ToolStripMenuItem();
-            чекToolStripMenuItem = new ToolStripMenuItem();
             CustomerAddToolStripMenuItem = new ToolStripMenuItem();
+            чекToolStripMenuItem = new ToolStripMenuItem();
+            ProductAddToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -56,6 +58,7 @@
             // 
             // ProductToolStripMenuItem
             // 
+            ProductToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { ProductAddToolStripMenuItem });
             ProductToolStripMenuItem.Name = "ProductToolStripMenuItem";
             ProductToolStripMenuItem.Size = new Size(180, 22);
             ProductToolStripMenuItem.Text = "Продукты";
@@ -63,10 +66,18 @@
             // 
             // SellerToolStripMenuItem
             // 
+            SellerToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { SellerAddToolStripMenuItem });
             SellerToolStripMenuItem.Name = "SellerToolStripMenuItem";
             SellerToolStripMenuItem.Size = new Size(180, 22);
             SellerToolStripMenuItem.Text = "Продавцы";
             SellerToolStripMenuItem.Click += SellerToolStripMenuItem_Click;
+            // 
+            // SellerAddToolStripMenuItem
+            // 
+            SellerAddToolStripMenuItem.Name = "SellerAddToolStripMenuItem";
+            SellerAddToolStripMenuItem.Size = new Size(180, 22);
+            SellerAddToolStripMenuItem.Text = "Добавить";
+            SellerAddToolStripMenuItem.Click += SellerAddToolStripMenuItem_Click;
             // 
             // CustomerToolStripMenuItem
             // 
@@ -76,6 +87,13 @@
             CustomerToolStripMenuItem.Text = "Покупатели";
             CustomerToolStripMenuItem.Click += CustomerToolStripMenuItem_Click;
             // 
+            // CustomerAddToolStripMenuItem
+            // 
+            CustomerAddToolStripMenuItem.Name = "CustomerAddToolStripMenuItem";
+            CustomerAddToolStripMenuItem.Size = new Size(126, 22);
+            CustomerAddToolStripMenuItem.Text = "Добавить";
+            CustomerAddToolStripMenuItem.Click += CustomerAddToolStripMenuItem_Click;
+            // 
             // чекToolStripMenuItem
             // 
             чекToolStripMenuItem.Name = "чекToolStripMenuItem";
@@ -83,12 +101,12 @@
             чекToolStripMenuItem.Text = "Чек";
             чекToolStripMenuItem.Click += CheckToolStripMenuItem_Click;
             // 
-            // CustomerAddToolStripMenuItem
+            // ProductAddToolStripMenuItem
             // 
-            CustomerAddToolStripMenuItem.Name = "CustomerAddToolStripMenuItem";
-            CustomerAddToolStripMenuItem.Size = new Size(180, 22);
-            CustomerAddToolStripMenuItem.Text = "Добавить";
-            CustomerAddToolStripMenuItem.Click += CustomerAddToolStripMenuItem_Click;
+            ProductAddToolStripMenuItem.Name = "ProductAddToolStripMenuItem";
+            ProductAddToolStripMenuItem.Size = new Size(180, 22);
+            ProductAddToolStripMenuItem.Text = "Добавить";
+            ProductAddToolStripMenuItem.Click += ProductAddToolStripMenuItem_Click;
             // 
             // Main
             // 
@@ -114,5 +132,7 @@
         private ToolStripMenuItem CustomerToolStripMenuItem;
         private ToolStripMenuItem чекToolStripMenuItem;
         private ToolStripMenuItem CustomerAddToolStripMenuItem;
+        private ToolStripMenuItem SellerAddToolStripMenuItem;
+        private ToolStripMenuItem ProductAddToolStripMenuItem;
     }
 }
