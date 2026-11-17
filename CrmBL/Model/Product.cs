@@ -11,6 +11,18 @@ namespace CrmBL.Model
         public decimal Price { get; set; }
         public int Count { get; set; }
         public virtual ICollection<Sell> Sells { get; set; }
+        public override int GetHashCode()
+        {
+            return Id;
+        }
+        public override bool Equals(object? obj)
+        {
+            if(obj is Product product)
+            {
+                return Id.Equals(product.Id);
+            }
+            return false;
+        }
         public override string ToString()
         {
             return Name;

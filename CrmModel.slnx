@@ -1,4 +1,5 @@
 <Solution>
   <Project Path="CrmBL/CrmBL.csproj" />
+  <Project Path="CrmBlTest/CrmBlTest.csproj" Id="86ee4959-b72f-4fdb-aa7f-977d63fe6016" />
   <Project Path="CrmUI/CrmUI.csproj" Id="eb61dd77-f051-429f-b4db-1592e541f75f" />
 </Solution>
