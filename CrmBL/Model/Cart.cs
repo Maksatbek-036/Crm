@@ -1,10 +1,9 @@
-﻿using CrmBL.Model;
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Text;
 
-namespace CrmBL
+namespace CrmBL.Model
 {
     public class Cart:IEnumerable
     {
